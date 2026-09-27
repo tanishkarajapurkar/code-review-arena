@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background-color: #080c14;
+  color: #f1f5f9;
+}
+
+/* Custom scrollbar for review lists and code areas */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+/* Monaco editor custom glyph markers */
+.line-comment-glyph {
+  background: #6366f1;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.line-comment-highlight {
+  background: rgba(99, 102, 241, 0.15) !important;
+  border-left: 3px solid #6366f1 !important;
+}
+
+.line-comment-blocker-highlight {
+  background: rgba(239, 68, 68, 0.15) !important;
+  border-left: 3px solid #ef4444 !important;
+}
